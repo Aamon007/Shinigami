@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MIN KHANT ZAW - Frontend / Web Developer and IT & Cybersecurity Enthusiast. Building responsive web applications with React, PHP, and modern web technologies.">
+  <meta name="keywords" content="Frontend Developer, Web Developer, React, PHP, MySQL, IT, Cybersecurity, Portfolio">
+  <meta property="og:title" content="MIN KHANT ZAW | Frontend / Web Developer">
+  <meta property="og:description" content="Building responsive web applications and continuously developing knowledge in networking, systems, and cybersecurity.">
+  <meta property="og:type" content="website">
+  <title>MIN KHANT ZAW | Frontend / Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="background-video" aria-hidden="true">
+    <video
+      class="background-video__element"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    >
+      <source src="assets/videos/cyber-background.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="background-video__overlay" aria-hidden="true"></div>
+
+  <header id="navbar"></header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center min-vh-100 position-relative overflow-hidden">
+      <div class="hero-bg-glow position-absolute top-0 start-0 w-100 h-100 pointer-events-none"></div>
+      <div class="container position-relative z-1">
+        <div class="row align-items-center min-vh-100 py-5">
+          <div class="col-lg-6 reveal">
+            <div class="d-inline-block px-3 py-1 rounded-pill border border-info text-info small fw-semibold mb-4 bg-info bg-opacity-10">
+              <span class="badge bg-info text-dark me-2">Open to Opportunities</span>
+            </div>
+            <p class="text-info fw-semibold mb-2 letter-spacing-wide">HELLO, I'M</p>
+            <h1 class="display-2 fw-bold mb-3 text-white hero-title">
+              MIN KHANT<br>ZAW
+            </h1>
+            <h2 class="h3 text-info mb-4 fw-semibold hero-typed-wrap"><span id="hero-typed" class="hero-typed" aria-live="polite"></span><span class="hero-typed-caret" aria-hidden="true">|</span></h2>
+            <p class="lead text-muted mb-5 hero-lead">
+              I build responsive web applications and continuously develop my knowledge in networking, systems, and cybersecurity. Passionate about clean code and practical problem-solving.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-5 hero-buttons">
+              <a href="portfolio.html" class="btn btn-primary btn-lg px-4 shadow-lg">View Projects</a>
+              <a href="contact.html" class="btn btn-outline btn-lg px-4 shadow-lg">Contact Me</a>
+            </div>
+            <div class="d-flex gap-4">
+              <a href="https://github.com/Aamon007" target="_blank" rel="noopener" class="text-info fs-4 btn-magnetic" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center mt-5 mt-lg-0 reveal">
+            <div class="hero-visual position-relative d-inline-block">
+              <div class="profile-wrapper d-inline-block position-relative">
+                <div class="position-absolute inset-0 rounded-circle bg-info opacity-25 blur-4x animate-pulse-glow"></div>
+                <img src="assets/images/photo_2026-08-07_19-54-37.jpg" alt="MIN KHANT ZAW - Frontend / Web Developer" class="img-fluid profile-img position-relative" loading="lazy">
+              </div>
+              <div class="floating-badge position-absolute top-0 start-0 animate-float">
+                <span class="badge bg-secondary border border-info text-info">React</span>
+              </div>
+              <div class="floating-badge position-absolute top-0 end-0 animate-float floating-badge--delay-1">
+                <span class="badge bg-secondary border border-info text-info">TypeScript</span>
+              </div>
+              <div class="floating-badge position-absolute bottom-0 start-0 animate-float floating-badge--delay-2">
+                <span class="badge bg-secondary border border-info text-info">PHP</span>
+              </div>
+              <div class="floating-badge position-absolute bottom-0 end-0 animate-float floating-badge--delay-05">
+                <span class="badge bg-secondary border border-info text-info">Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="py-5" id="about">
+      <div class="container py-5">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">01 — About Me</span>
+          <h2 class="fw-bold section-title">Getting to Know Me</h2>
+          <p class="section-subtitle">A developer focused on building practical web applications and expanding technical knowledge</p>
+        </div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal text-center">
+            <div class="profile-wrapper d-inline-block position-relative">
+              <img src="assets/images/photo_2026-08-07_19-54-37.jpg" alt="MIN KHANT ZAW" class="img-fluid profile-img" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <h3 class="fw-bold mb-3">Hi, I'm Min Khant Zaw</h3>
+            <p class="text-muted mb-3">I'm a Frontend / Web Developer based in Yangon, Myanmar, focused on building responsive and functional web applications. My interest in technology spans web development, networking, and cybersecurity.</p>
+            <p class="text-muted mb-4">I learn through hands-on project work, applying practical concepts in HTML, CSS, JavaScript, React, PHP, and MySQL. I am continuously expanding my knowledge in IT infrastructure, Linux systems, and security fundamentals.</p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-info"></i>
+                  <span>Responsive Web Development</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-info"></i>
+                  <span>Clean & Maintainable Code</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-info"></i>
+                  <span>Practical Problem Solving</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-info"></i>
+                  <span>Continuous Learning</span>
+                </div>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary mt-4 px-4">More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section class="py-5 bg-secondary bg-opacity-10" id="services">
+      <div class="container py-5">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">02 — What I Do</span>
+          <h2 class="fw-bold section-title">My Services</h2>
+          <p class="section-subtitle">Practical web development and IT services based on my current skill set</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="service-card tilt-card h-100 p-4">
+              <div class="service-icon mb-3"><i class="bi bi-layout-text-window"></i></div>
+              <span class="text-info fw-bold small text-uppercase letter-spacing-wide">01</span>
+              <h4 class="service-title fw-bold mt-2 mb-3">Frontend Web Development</h4>
+              <p class="service-desc text-muted mb-3">Building responsive interfaces with HTML, CSS, JavaScript, React, and Bootstrap.</p>
+              <a href="contact.html" class="btn btn-outline btn-sm mt-auto">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="service-card tilt-card h-100 p-4">
+              <div class="service-icon mb-3"><i class="bi bi-server"></i></div>
+              <span class="text-info fw-bold small text-uppercase letter-spacing-wide">02</span>
+              <h4 class="service-title fw-bold mt-2 mb-3">PHP / MySQL Development</h4>
+              <p class="service-desc text-muted mb-3">Server-side applications and authentication systems with PHP and MySQL integration.</p>
+              <a href="contact.html" class="btn btn-outline btn-sm mt-auto">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="service-card tilt-card h-100 p-4">
+              <div class="service-icon mb-3"><i class="bi bi-diagram-3"></i></div>
+              <span class="text-info fw-bold small text-uppercase letter-spacing-wide">03</span>
+              <h4 class="service-title fw-bold mt-2 mb-3">API Integration</h4>
+              <p class="service-desc text-muted mb-3">Connecting applications with REST APIs and handling data exchange between services.</p>
+              <a href="contact.html" class="btn btn-outline btn-sm mt-auto">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="services.html" class="btn btn-primary px-5">View All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Expertise Section -->
+    <section class="py-5" id="skills">
+      <div class="container py-5">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">03 — My Expertise</span>
+          <h2 class="fw-bold section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-code-slash"></i></div>
+                <h5 class="fw-bold mb-0">Frontend</h5>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-accent">HTML5</span>
+                <span class="badge badge-accent">CSS3</span>
+                <span class="badge badge-accent">JavaScript</span>
+                <span class="badge badge-accent">React</span>
+                <span class="badge badge-accent">JSX</span>
+                <span class="badge badge-accent">TypeScript</span>
+                <span class="badge badge-accent">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-server"></i></div>
+                <h5 class="fw-bold mb-0">Backend & Database</h5>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-accent">PHP</span>
+                <span class="badge badge-accent">MySQL</span>
+                <span class="badge badge-accent">REST API</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-tools"></i></div>
+                <h5 class="fw-bold mb-0">Tools</h5>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-accent">Git</span>
+                <span class="badge badge-accent">GitHub</span>
+                <span class="badge badge-accent">VS Code</span>
+                <span class="badge badge-accent">Vite</span>
+                <span class="badge badge-accent">npm</span>
+                <span class="badge badge-accent">Vercel</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="service-icon mb-0"><i class="bi bi-shield-lock"></i></div>
+                <h5 class="fw-bold mb-0">IT / Security</h5>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-accent">Linux</span>
+                <span class="badge badge-accent">Windows Server</span>
+                <span class="badge badge-accent">Networking</span>
+                <span class="badge badge-accent">CCNA studies</span>
+                <span class="badge badge-accent">Cybersecurity</span>
+                <span class="badge badge-accent">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5 reveal">
+          <a href="skills.html" class="btn btn-primary px-5">View All Skills</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="py-5 bg-secondary bg-opacity-10" id="portfolio">
+      <div class="container py-5">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">04 — Featured Projects</span>
+          <h2 class="fw-bold section-title">Recent Work</h2>
+          <p class="section-subtitle">A selection of projects that showcase my skills and learning journey</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 col-12 reveal">
+            <div class="card project-card h-100 border-0 shadow hover-lift">
+              <div class="overflow-hidden img-hover-zoom">
+                <img src="assets/images/projects/oryzo.svg" class="card-img-top" alt="ORYZO - React E-Commerce Dashboard" loading="lazy">
+              </div>
+              <div class="card-body bg-dark d-flex flex-column">
+                <h5 class="card-title text-info fw-bold">ORYZO</h5>
+                <p class="card-text text-muted flex-grow-1">React-based e-commerce and gaming shop web application with product catalog, cart functionality, and REST API integration.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge badge-accent">React</span>
+                  <span class="badge badge-accent">JavaScript</span>
+                  <span class="badge badge-accent">Bootstrap</span>
+                  <span class="badge badge-accent">REST API</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="https://oryzo-dashboard.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm flex-fill">Live Demo</a>
+                  <a href="https://github.com/Aamon007/oryzo-dashboard" target="_blank" rel="noopener" class="btn btn-outline btn-sm flex-fill"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 reveal">
+            <div class="card project-card h-100 border-0 shadow hover-lift">
+              <div class="overflow-hidden img-hover-zoom">
+                <img src="assets/images/projects/astralis.svg" class="card-img-top" alt="ASTRALIS - Space Travel Interactive App" loading="lazy">
+              </div>
+              <div class="card-body bg-dark d-flex flex-column">
+                <h5 class="card-title text-info fw-bold">ASTRALIS</h5>
+                <p class="card-text text-muted flex-grow-1">Space travel themed interactive web application built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge badge-accent">React</span>
+                  <span class="badge badge-accent">TypeScript</span>
+                  <span class="badge badge-accent">Vite</span>
+                  <span class="badge badge-accent">Tailwind CSS</span>
+                  <span class="badge badge-accent">Framer Motion</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="https://universe-vip.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm flex-fill">Live Demo</a>
+                  <a href="https://github.com/Aamon007/UniverseVIP" target="_blank" rel="noopener" class="btn btn-outline btn-sm flex-fill"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 reveal">
+            <div class="card project-card h-100 border-0 shadow hover-lift">
+              <div class="overflow-hidden img-hover-zoom">
+                <img src="assets/images/projects/shophub.svg" class="card-img-top" alt="My Portfolio - Personal Portfolio Website" loading="lazy">
+              </div>
+              <div class="card-body bg-dark d-flex flex-column">
+                <h5 class="card-title text-info fw-bold">My Portfolio</h5>
+                <p class="card-text text-muted flex-grow-1">Personal Portfolio Website</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge badge-accent">HTML</span>
+                  <span class="badge badge-accent">CSS</span>
+                  <span class="badge badge-accent">JavaScript</span>
+                  <span class="badge badge-accent">Bootstrap</span>
+                  <span class="badge badge-accent">JSON</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="https://aamon007.github.io/portfolio-website/" target="_blank" rel="noopener" class="btn btn-primary btn-sm flex-fill">Live Demo</a>
+                  <a href="https://github.com/Aamon007/portfolio-website" target="_blank" rel="noopener" class="btn btn-outline btn-sm flex-fill"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 reveal">
+            <div class="card project-card h-100 border-0 shadow hover-lift">
+              <div class="overflow-hidden img-hover-zoom">
+                <img src="assets/images/projects/php-auth.svg" class="card-img-top" alt="PHP Login & Registration System" loading="lazy">
+              </div>
+              <div class="card-body bg-dark d-flex flex-column">
+                <h5 class="card-title text-info fw-bold">PHP Login & Registration System</h5>
+                <p class="card-text text-muted flex-grow-1">Secure authentication system with user registration, login, password hashing, session management, and MySQL database integration.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge badge-accent">PHP</span>
+                  <span class="badge badge-accent">MySQL</span>
+                  <span class="badge badge-accent">HTML</span>
+                  <span class="badge badge-accent">CSS</span>
+                  <span class="badge badge-accent">JavaScript</span>
+                </div>
+                <div class="d-flex gap-2 mt-auto">
+                  <a href="http://shini-store.infinityfree.io/login.php" target="_blank" rel="noopener" class="btn btn-primary btn-sm flex-fill">Live Demo</a>
+                  <a href="https://github.com/Aamon007/php-project-" target="_blank" rel="noopener" class="btn btn-outline btn-sm flex-fill"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5 reveal">
+          <a href="portfolio.html" class="btn btn-primary px-5">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Approach Section -->
+    <section class="py-5" id="approach">
+      <div class="container py-5">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">05 — Development Approach</span>
+          <h2 class="fw-bold section-title">How I Work</h2>
+          <p class="section-subtitle">My approach to building web applications</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow text-center">
+              <div class="service-icon mb-3"><i class="bi bi-layout-text-window-reverse"></i></div>
+              <h5 class="fw-bold mb-3">Responsive First</h5>
+              <p class="text-muted">Building layouts that adapt seamlessly across desktop, tablet, and mobile devices using modern CSS and Bootstrap.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow text-center">
+              <div class="service-icon mb-3"><i class="bi bi-code"></i></div>
+              <h5 class="fw-bold mb-3">Clean Code</h5>
+              <p class="text-muted">Writing readable, maintainable code with proper structure, comments where needed, and consistent formatting.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow text-center">
+              <div class="service-icon mb-3"><i class="bi bi-shield-check"></i></div>
+              <h5 class="fw-bold mb-3">Security Awareness</h5>
+              <p class="text-muted">Applying security best practices such as input validation, password hashing, and secure session handling.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow text-center">
+              <div class="service-icon mb-3"><i class="bi bi-speedometer2"></i></div>
+              <h5 class="fw-bold mb-3">Performance Focus</h5>
+              <p class="text-muted">Optimizing assets, code structure, and loading behavior to deliver fast and smooth user experiences.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow text-center">
+              <div class="service-icon mb-3"><i class="bi bi-git"></i></div>
+              <h5 class="fw-bold mb-3">Version Control</h5>
+              <p class="text-muted">Using Git and GitHub for collaboration, change tracking, and maintaining organized project history.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="card bg-secondary bg-opacity-10 border-0 p-4 h-100 hover-glow text-center">
+              <div class="service-icon mb-3"><i class="bi bi-arrow-repeat"></i></div>
+              <h5 class="fw-bold mb-3">Continuous Learning</h5>
+              <p class="text-muted">Regularly exploring new technologies, frameworks, and methodologies to improve my development skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Let's Work Together CTA -->
+    <section class="py-5 bg-secondary bg-opacity-10" id="contact">
+      <div class="container py-5 text-center reveal">
+        <span class="section-label">06 — Let's Work Together</span>
+        <h2 class="fw-bold mb-3 mt-3">Interested in Working Together?</h2>
+        <p class="text-muted mb-5 hero-section-copy">
+          I am open to discussing web development projects, collaborations, and entry-level opportunities.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg px-5">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/data-loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Technical skills of MIN KHANT ZAW - Frontend / Web Developer. Skills in HTML, CSS, JavaScript, React, TypeScript, PHP, MySQL, Git, Linux, Networking, and more.">
+  <title>Skills | MIN KHANT ZAW</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="background-video" aria-hidden="true">
+    <video
+      class="background-video__element"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    >
+      <source src="assets/videos/cyber-background.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="background-video__overlay" aria-hidden="true"></div>
+
+  <header id="navbar"></header>
+
+  <main>
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">Technical Skills</span>
+          <h2 class="fw-bold section-title">My Expertise</h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+        <div class="row g-4" id="skills-container">
+          <div class="col-12 text-center py-5">
+            <div class="spinner-custom mx-auto mb-3"></div>
+            <p class="text-muted">Loading skills...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-secondary bg-opacity-10">
+      <div class="container py-5">
+        <div class="text-center mb-5 reveal">
+          <span class="section-label">Tools & Technologies</span>
+          <h2 class="fw-bold section-title">Daily Workflow Tools</h2>
+          <p class="section-subtitle">Tools I use for development and collaboration</p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center gap-3 reveal">
+          <span class="skill-badge">VS Code</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">GitHub</span>
+          <span class="skill-badge">Vite</span>
+          <span class="skill-badge">npm</span>
+          <span class="skill-badge">Vercel</span>
+          <span class="skill-badge">Bootstrap</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const container = document.getElementById('skills-container');
+      if (!container) return;
+
+      try {
+        const skills = await DataLoader.loadAndCache('skills.json');
+        renderSkills(skills);
+      } catch (error) {
+        console.warn('Could not load skills, using fallback.', error);
+        const skills = DataLoader.getFallback('skills.json');
+        renderSkills(skills);
+      }
+
+      setTimeout(() => {
+        document.querySelectorAll('#skills-container .reveal').forEach(el => {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+              }
+            });
+          }, { threshold: 0.1 });
+          observer.observe(el);
+        });
+      }, 100);
+    });
+
+    function renderSkills(skills) {
+      const container = document.getElementById('skills-container');
+      container.innerHTML = skills.map((category, catIndex) => `
+        <div class="col-12 reveal stagger-${(catIndex % 3) + 1}">
+          <div class="card bg-secondary bg-opacity-10 border-0 p-4 mb-4">
+            <h5 class="fw-bold mb-3 text-info"><i class="bi bi-folder2-open me-2"></i>${category.category}</h5>
+            <div class="d-flex flex-wrap gap-2">
+              ${category.skills.map(skill => `
+                <span class="badge badge-accent">${skill}</span>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

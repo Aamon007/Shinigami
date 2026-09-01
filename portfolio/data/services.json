@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "title": "Frontend Web Development",
+    "icon": "bi-layout-text-window",
+    "description": "Building responsive and interactive user interfaces using HTML, CSS, JavaScript, React, and Bootstrap. Focus on clean code and modern design patterns.",
+    "tags": ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap"],
+    "link": "contact.html"
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "title": "React UI Development",
+    "icon": "bi-code-square",
+    "description": "Creating component-based user interfaces with React and TypeScript. Experience with Vite, Tailwind CSS, and Framer Motion for interactive experiences.",
+    "tags": ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
+    "link": "contact.html"
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "title": "PHP / MySQL Web Development",
+    "icon": "bi-server",
+    "description": "Developing server-side applications and authentication systems with PHP and MySQL. Implementing secure password hashing, session management, and database integration.",
+    "tags": ["PHP", "MySQL", "Authentication", "Sessions", "REST API"],
+    "link": "contact.html"
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "title": "API Integration",
+    "icon": "bi-diagram-3",
+    "description": "Connecting frontend applications with backend services and third-party APIs. Working with RESTful endpoints and handling data exchange.",
+    "tags": ["REST API", "JavaScript", "PHP", "JSON"],
+    "link": "contact.html"
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "title": "Responsive Website Development",
+    "icon": "bi-phone",
+    "description": "Building mobile-first, responsive websites that work seamlessly across desktop, tablet, and mobile devices using modern CSS and Bootstrap.",
+    "tags": ["Responsive Design", "CSS3", "Bootstrap", "Mobile-First"],
+    "link": "contact.html"
+  },
+  {
+    "id": 6,
+    "number": "06",
+    "title": "IT Support & Troubleshooting",
+    "icon": "bi-tools",
+    "description": "Providing basic IT support, system configuration, and network troubleshooting. Experience with Linux, Windows Server, and networking fundamentals.",
+    "tags": ["Linux", "Windows Server", "Networking", "Python", "Support"],
+    "link": "contact.html"
+  }
+]

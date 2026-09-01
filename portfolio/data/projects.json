@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "ORYZO",
+    "description": "React-based e-commerce and gaming shop web application with product catalog, shopping cart functionality, and REST API integration.",
+    "image": "assets/images/projects/oryzo.svg",
+    "technologies": ["React", "JavaScript", "HTML", "CSS", "Bootstrap", "REST API"],
+    "github": "https://github.com/Aamon007/oryzo-dashboard",
+    "live": "https://oryzo-dashboard.vercel.app/",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "ASTRALIS",
+    "description": "Space travel themed interactive web application built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion for smooth animations.",
+    "image": "assets/images/projects/astralis.svg",
+    "technologies": ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/Aamon007/UniverseVIP",
+    "live": "https://universe-vip.vercel.app/",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "My Portfolio",
+    "description": "Personal Portfolio Website",
+    "image": "assets/images/projects/shophub.svg",
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "JSON"],
+    "github": "https://github.com/Aamon007/portfolio-website",
+    "live": "https://aamon007.github.io/portfolio-website/",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "PHP Login & Registration System",
+    "description": "Secure authentication system with user registration, login, password hashing, session management, and MySQL database integration.",
+    "image": "assets/images/projects/php-auth.svg",
+    "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/Aamon007/php-project-",
+    "live": "http://shini-store.infinityfree.io/login.php",
+    "featured": false
+  }
+]

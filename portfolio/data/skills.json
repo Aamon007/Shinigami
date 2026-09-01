@@ -1,0 +1,46 @@
+[
+  {
+    "category": "Frontend Development",
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "JSX",
+      "TypeScript / TSX",
+      "Bootstrap",
+      "REST API"
+    ]
+  },
+  {
+    "category": "Backend & Database",
+    "skills": [
+      "PHP",
+      "MySQL",
+      "Authentication Systems",
+      "Database Integration"
+    ]
+  },
+  {
+    "category": "Tools & Development",
+    "skills": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Vite",
+      "npm",
+      "Vercel"
+    ]
+  },
+  {
+    "category": "IT / Networking / Security",
+    "skills": [
+      "Networking",
+          "CCNA studies",
+      "Linux",
+      "Windows Server",
+      "Cybersecurity",
+      "Python"
+    ]
+  }
+]

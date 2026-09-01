@@ -1,0 +1,276 @@
+/* ========================================
+   RESPONSIVE.CSS
+   Responsive design for all breakpoints
+   ======================================== */
+
+/* --- Large Desktop (1400px+) --- */
+@media (min-width: 1400px) {
+  .container-custom {
+    max-width: 1320px;
+  }
+}
+
+/* --- Desktop (1200px - 1399px) --- */
+@media (max-width: 1399px) {
+  .section-header .section-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* --- Small Desktop (992px - 1199px) --- */
+@media (max-width: 1199px) {
+  .hero-title {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* --- Tablet Landscape (768px - 991px) --- */
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 3rem !important;
+  }
+
+  .hero-visual {
+    margin-top: 3rem;
+  }
+
+  .profile-img {
+    max-width: 300px !important;
+  }
+
+  .section-header .section-title {
+    font-size: 2rem;
+  }
+
+  .nav-custom .navbar-collapse {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border);
+  }
+}
+
+/* --- Tablet Portrait (576px - 767px) --- */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+
+  .profile-img {
+    max-width: 250px !important;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-header .section-title {
+    font-size: 1.75rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .service-card {
+    text-align: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+}
+
+/* --- Mobile Large (480px - 575px) --- */
+@media (max-width: 575px) {
+  .hero-title {
+    font-size: 2.25rem !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .profile-img {
+    max-width: 200px !important;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    left: -26px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* --- Mobile Medium (390px - 479px) --- */
+@media (max-width: 479px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .section-header .section-title {
+    font-size: 1.5rem;
+  }
+
+  .container-custom {
+    padding: 0 1rem;
+  }
+}
+
+/* --- Mobile Small (< 390px) --- */
+@media (max-width: 389px) {
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* --- Prevent horizontal scroll --- */
+html, body {
+  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Responsive Typography --- */
+@media (max-width: 767px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1.1rem; }
+  h6 { font-size: 1rem; }
+}
+
+/* --- Responsive Spacing --- */
+@media (max-width: 767px) {
+  .py-section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .mb-section {
+    margin-bottom: 3rem !important;
+  }
+}
+
+/* --- Responsive Grid --- */
+.grid-responsive {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Responsive Navigation --- */
+@media (max-width: 991px) {
+  .nav-custom .nav-item {
+    margin: 0.25rem 0;
+  }
+
+  .nav-custom .nav-link {
+    padding: 0.75rem 1rem !important;
+    display: block;
+  }
+
+  .nav-cta {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* --- Responsive Forms --- */
+@media (max-width: 767px) {
+  .form-control {
+    font-size: 16px; /* Prevent iOS zoom */
+  }
+}
+
+/* --- Responsive Tables (if any) --- */
+@media (max-width: 767px) {
+  table {
+    font-size: 0.875rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}
+
+/* --- Print Styles --- */
+@media print {
+  .nav-custom,
+  .back-to-top,
+  .btn {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}

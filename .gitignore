@@ -1,0 +1,60 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output / cache
+dist/
+build/
+.out/
+.cache/
+.eslintcache
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.tmp
+*.bak
+*.swp
+*~
+
+# Editor / IDE
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.history/
+
+# Logs
+*.log
+logs/
+
+# Optional: ignore large media if needed — adjust as necessary
+# *.mp4
+
+# Keep these in sync with .git/info/exclude for Kilo Code
+.kilo/worktrees/
+.kilo/agent-manager.json
+.kilo/setup-script
+.kilo/setup-script.sh
+.kilo/setup-script.ps1
+.kilo/setup-script.cmd
+.kilo/setup-script.bat
+.kilocode/worktrees/
+.kilocode/agent-manager.json
+.kilocode/setup-script
+.kilocode/setup-script.sh
+.kilocode/setup-script.ps1
+.kilocode/setup-script.cmd
+.kilocode/setup-script.bat
